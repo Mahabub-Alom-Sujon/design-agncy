@@ -26,7 +26,7 @@ const Team = async () => {
                     {
                         slicedData.map((item, i) => {
                             return (
-                                <div className='col-4 text-center'>
+                                <div key={i} className='col-4 text-center'>
                                     <div className='team-box'>
                                         <img src={item['image']} alt="/" />
                                         <h4>{item['name']}</h4>
